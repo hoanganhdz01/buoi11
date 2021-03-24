@@ -1,0 +1,11 @@
+{
+  "name": "buoi11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hoanganhdz01/buoi11.git",
+  "author": "hoanganhdz01 <hoanganhqv1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "hoanganh":"browser-sync --start --watch --sever --file '*'"
+  }
+}
