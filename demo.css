@@ -145,7 +145,116 @@ body {
    
 .custom5{
    text-align: center;
-   flex:;
+   flex:1;
 }
    
-   
+ .line_buttom{
+     width: 1200px;
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin-top: 10px;
+     text-align:center;
+     color: black;
+ }  
+ .line_b1{
+     flex:1;
+     height: 100%;
+ }
+ .line_b2{
+    height: 100%;
+ }
+ .line_b3{
+     flex:1;
+     height: 100%;
+ }
+ .line_b4{
+     flex:1;
+     height: 100%;
+ }
+ .line_b5{
+     flex:1;
+     height: 100%;
+ }
+ .line_b6{
+    height: 100%;
+     flex:1;
+ }
+ .line_b7{
+    height: 100%;
+     flex:1;
+ }
+ .line_b8{
+    height: 100%;
+     flex:1;
+ }
+ .line_b9{
+    height: 100%;
+     flex:1;
+ }
+ .line_b10{
+    height: 100%;
+     flex:1;
+ }
+.icon1{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: 0px -89px;
+    height: 24px;
+    width: 13px;
+}
+.icon2{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -15px -89px;
+    height: 24px;
+    width: 26px;
+}
+.icon3{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon4{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon5{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon6{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon7{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon8{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon9{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
+.icon10{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+    background-position: -12px -111px;
+    height: 22px;
+    width: 12px;
+}
