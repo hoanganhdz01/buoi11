@@ -16,18 +16,15 @@ body {
     flex-direction: column;
 }
 .line_top {
-    /* background-color: tomato   ; */
     align-self: center;
     width: 1200px;
     height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 .line_top>div{
     background-color: rgb(37, 36, 36);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -40,9 +37,8 @@ body {
 .c3 {
     flex: 6;
 } 
-.logo {
+.icon_logo {
     align-self: center;
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: 3 1;
     width: 160px;
     height: 30px;
@@ -59,7 +55,6 @@ body {
     height: 100%;
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -73,29 +68,27 @@ body {
 .search:focus {
     outline: none;
 }
-.icontgdd-topsearch {
+.icon_topsearch {
     position: absolute;
     right: 10px;
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -160px 0;
     width: 20px;
     height: 20px;
 }
 
 .giohang {
+    background-position: -144px -90px;
     color: white;
     width: 95%;
     height: 80%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     border: solid white 1px;
     border-radius: 5px;
 }   
 
-.icontgdd-cart {
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+.icon_cart {
     background-position: -144px -90px;
     height: 22px;
     width: 28px;
@@ -105,16 +98,20 @@ body {
 } 
 .custom2{
     position: relative;
-   text align:right ;
    flex :2.5;
    color: yellow;
 }
 .custom{
    text-align: center;
    flex: 1;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .custom:hover{
-    background-color: white;       }
+    background-color: white;color: black;     
+}
 .line2{
     background-color:yellow;
     height: 50%;
@@ -125,64 +122,60 @@ body {
     width: 1200px;
     height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     color: black;
-    font-size:12px;    }
+    font-size:12px;
+}
 .b{
-     flex:1;
+     flex:1.1;
      display:flex;
-     justify-content: center;       
+     justify-content: center;
      align-items: center;  }
- .b:hover{
+.b:hover,
+.b1:hover{
      background-color:white;
- }.b1{
+    }
+ .b1{
      flex:1.5;    
      display:flex;
      justify-content: center;
      align-items: center;
- }.b1:hover{
-    background-color: white;
- }
+    }
 .icon_dt{
-    /* background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2); */
     background-position: 0 -91px;
     height: 22px;
     width: 13px;
 }
 .icon_latop{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -15px -91px;
     height: 24px;
     width: 26px;
 }
 .icon_Tablet{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -40px -91px;
     height: 22px;
     width: 20px;
 }
 .icon_pk{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -60px -91px;
     height: 22px;
     width: 22px;
 }
 .icon_dhtt{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -99px -91px;
     height: 22px;
     width: 18px;
 }
 .icon_dhtm{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -83px -91px;
     height: 22px;
     width: 15px;
 }
 .icon_pc{
-    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
     background-position: -118px -90px;
     height: 22px;
     width: 26px;
     }
+i[class^="icon_"]{
+    background-image: url(https://www.thegioididong.com/Content/desktop/images/V5/icondesktop20200728@1x.png?v=2);
+}
