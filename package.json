@@ -6,6 +6,6 @@
   "author": "hoanganhdz01 <hoanganhqv1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "hoanganh":"browser-sync --start --watch --sever --file '*'"
+    "start":"browser-sync --start --watch --sever --file '*'"
   }
 }
