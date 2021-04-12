@@ -189,7 +189,7 @@ i[class^="icon_"]{
 }
 .tab{
     width: 1200px;
-    height: 26vw;
+    height: 350px;
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -204,18 +204,18 @@ i[class^="icon_"]{
     flex-direction: column;
 }
 .bn{
-    flex: 3;
+    flex: 4;
 }
 .cc{
-    flex: 1.2;
+    flex: 0.5;
     display: flex;
     color: black;
     text-align: center;
     margin-bottom: 5px;
 }
 .text{
-    border-right: solid 1px rgb(163, 157, 157);
     flex: 1;
+    border-right: 1px solid rgb(187, 185, 185);
 }
 .banner_right{
     flex:1;
@@ -224,15 +224,16 @@ i[class^="icon_"]{
 }
 .tast{
     flex: 1;
-    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
+    background-color:white ; 
 }
 .tast1{
-    flex: 1;
-    background-color:white ;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1px;
 }
 .tt{
     flex: 1.5;
@@ -241,16 +242,21 @@ i[class^="icon_"]{
     align-items: center;
     background-color: rgb(255, 230, 0);
     font-weight: bold;
-    width:40%;
+    width:30%;
     padding:10px;
+    border-right:5% rgb(255, 230, 0) ;
 }
 .tt1{
     flex: 2;
-    margin-left: 10px;
     background-color: white;
     display: flex;
-    margin: 10px;
     flex-direction:row;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.time{
+   margin-bottom: 1px;
+   background-color: white;
 }
 .test{
     flex:1;
@@ -270,7 +276,7 @@ i[class^="icon_"]{
     }
 .tab1{
     width: 1200px;
-    height: 35vw;
+    height: 50vh;
     display:flex;
     flex-direction:row;
     justify-content:center;
