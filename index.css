@@ -4,6 +4,7 @@ body {
     color: white;
     font-size: 12px;
     background-color: rgb(233, 229, 229);
+    box-sizing: border-box;
 }
 .header {  
     height: 80px;
@@ -23,17 +24,17 @@ body {
     justify-content: center;
 }
 .line_top>div{
-    background-color: rgb(37, 36, 36);
+    background-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.c1,.c3 {
+.line-left,.line-right {
     flex: 6;
     display: flex;
     justify-content: center;
 }
-.c2 {
+.line-center {
     flex: 1.5;
 }
 .khuyenmai {
@@ -80,13 +81,52 @@ body {
     height: 22px;
     width: 28px;
 }
-.c3>div{
+.line-right>div{
     border-right: 1px rgb(155, 150, 150)  solid;
 } 
 .custom2{
+    flex :2.8;
+    color: yellow;
+    display: flex;
+}
+.pink{
     position: relative;
-   flex :2.5;
-   color: yellow;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 7.5px;
+}
+.wave {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px yellow solid;
+    border-radius:9px;
+}
+.wave {
+    animation: 1.25s  batdausong linear infinite;
+}
+@keyframes batdausong {
+    90% {
+        height: 40px;
+        width: 40px;
+        border-radius: 26px;
+        border: 1px rgba(255, 255, 0, 0.0) solid;
+    }
+    100% {
+        border: 1px rgba(255, 255, 0, 0.0) solid;
+    }
+}
+.viettle{
+    flex: 3;
 }
 .custom{
    text-align: center;
@@ -182,6 +222,21 @@ body {
     height: 22px;
     width: 26px;
     }
+.icon_star{
+    background-position: -291px -29px;
+    height: 19px;
+    width: 19px;
+}
+.icon_halfstar{
+    background-position: -420px -29px;
+    width: 19px;
+    height: 19px;
+}
+.icon_overstar{
+    background-position: -310px -29px;
+    width: 14px;
+    height: 14px;
+}
 i[class^="icon_"]{
     background-image: url(/imagedemo/icondesktop20200728@1x.png);
 }
@@ -196,7 +251,7 @@ i[class^="icon_"]{
     display: flex;
     flex-direction:column;
 }
-.banner_left{
+.banner-left{
     flex:2;
     width:60%;
     background-color: white;
@@ -204,7 +259,7 @@ i[class^="icon_"]{
     flex-direction: column;
     margin-right: 10px;
 }
-.banner_right{
+.banner-right{
     flex:1;
     width: 35%;
     flex-direction:column;
@@ -302,17 +357,22 @@ i[class^="icon_"]{
     width: 1200px;
     height: 350px;
     display:flex;
-    flex-direction:row;
     justify-content:center;
     align-self: center;
     margin: 10px;
 }
-
+.tab3{
+    width: 1200px;
+    height: 400px;
+    display:flex;
+    justify-content:center;
+    align-self: center;
+    margin: 10px;
+}
 .tab2{
     width: 1200px;
     height: 450px;
     display:flex;
-    flex-direction:row;
     justify-content:center;
     align-self: center;
     margin: 10px;
@@ -321,7 +381,6 @@ i[class^="icon_"]{
     width: 1200px;
     height: 750px;
     display:flex;
-    flex-direction:row;
     justify-content:center;
     align-self: center;
     margin: 10px;
@@ -339,7 +398,6 @@ i[class^="icon_"]{
     border-top:1px rgb(226, 223, 223) solid;
     flex: 8;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -350,6 +408,10 @@ i[class^="icon_"]{
     display: flex;
     flex-direction:column;
 }
+.coment1:hover{
+    transform:translatey(-10px);
+    transition:0.5s;
+}
 .sanphamtrang0{ 
     flex: 2;
     border: rgb(226, 222, 222) 1px solid;
@@ -358,30 +420,112 @@ i[class^="icon_"]{
     flex-direction:column;
 }
 .coment{
-    flex: 0.5;
-   color: black;
-   margin-top: 10px;
-   border-radius: 10px;
+    margin-top: 10px;margin-bottom: 10px;
+    height: 25px;
+    width:240px;
+    position: relative;
 }
-.coment h{
+.coment lean{
     padding: 5px;
     background-color: rgb(255, 217, 0);
+    border-radius:5px;
+}
+lean{
+    color :black;
 }
 .coment1{
-    flex: 2;
+    flex: 1.8;
     align-self:center;
     transition:0.5s;
+    padding: 10px 0;
 }
 .coment2{
-    margin:10PX 10px 0 10px;
     flex: 2;
     color: black;
+    margin-left: 20px;margin-top: -10px;
+    line-height: 5px;
 }
-.coment2 p {
-    color: red;
-    font-weight: bold;
+.star{
+    display:flex;
+    position: absolute;
+    top: 20px;
+    left: -2px;
 }
-.coment1:hover {
-    transform:translatey(-10px);
-    transition:0.5s;
+.star1{
+    display:flex;
+    position: absolute;
+    left: -5px;
+}
+.halfstar{
+    display:flex;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+i1{
+    padding: 5px;
+}
+strong{
+    color:#df0909;
+}
+h3{
+    font-weight:normal;
+    line-height: 15px;
+}
+h3:hover{
+    color:blue;
+}
+h5{
+    color:red
+}
+h4{
+    line-height: 15px;
+}
+.spam{
+    width:50%;
+    height: 18px;
+    background-color: rgb(247, 38, 73);
+    color: white;display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+.gia{
+    display:block;
+    position: relative;
+}
+.gia span{
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+span1{
+    color:red
+}
+.coment1{
+    position: relative;
+}
+.docquyen{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+
+}
+.topright {
+    position: absolute;
+    right: 0px;
+    top:-20px;
+}
+.sanpham{
+    margin: 0%;
+}
+.turndown{
+    width:45%;
+    height: 30px;
+    display: flex;
+    margin-left:20px;
+    color: #fff;
+    background-color: red;
+    align-items: center;
+    justify-content:last:flex-end;
+    border-radius:15px;
 }
