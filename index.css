@@ -360,6 +360,7 @@ i[class^="icon_"]{
     justify-content:center;
     align-self: center;
     margin: 10px;
+    cursor: pointer;
 }
 .tab3{
     width: 1200px;
@@ -368,6 +369,7 @@ i[class^="icon_"]{
     justify-content:center;
     align-self: center;
     margin: 10px;
+    cursor: pointer;
 }
 .tab2{
     width: 1200px;
@@ -376,6 +378,7 @@ i[class^="icon_"]{
     justify-content:center;
     align-self: center;
     margin: 10px;
+    cursor: pointer;
 }
 .tab1{
     width: 1200px;
@@ -384,6 +387,7 @@ i[class^="icon_"]{
     justify-content:center;
     align-self: center;
     margin: 10px;
+    cursor: pointer;
 }
 .with{
     flex:1;
@@ -535,12 +539,12 @@ span1{
 .convertleft{
     display: flex;
     position: absolute;
-    height: 80px;
-    width:40px;
+    height: 60px;
+    width:30px;
     background:white;
-    border-top:1px #999 solid;
-    border-right:1px #999 solid;
-    border-bottom:1px #999 solid;
+    border-top:2px rgb(235, 228, 228) solid;
+    border-right:2px rgb(235, 228, 228) solid;
+    border-bottom:2px rgb(235, 228, 228) solid;
     border-radius: 5px;
     left: 0px;
     font-size: 40px;
@@ -550,12 +554,12 @@ span1{
 .convertright{
     display: flex;
     position: absolute;
-    height: 80px;
-    width:40px;
+    height: 60px;
+    width:30px;
     background:white;
-    border-top:1px #999 solid;
-    border-left:1px #999 solid;
-    border-bottom:1px #999 solid;
+    border-top:2px rgb(235, 228, 228) solid;
+    border-left:2px rgb(235, 228, 228) solid;
+    border-bottom:2px rgb(235, 228, 228) solid;
     border-radius: 5px;
     right: 0px;
     font-size: 40px;
