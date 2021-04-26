@@ -529,3 +529,39 @@ span1{
     justify-content:last:flex-end;
     border-radius:15px;
 }
+.with1{
+    position:relative;
+}
+.convertleft{
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width:40px;
+    background:white;
+    border-top:1px #999 solid;
+    border-right:1px #999 solid;
+    border-bottom:1px #999 solid;
+    border-radius: 5px;
+    left: 0px;
+    font-size: 40px;
+    color:#999;
+    justify-content: center;
+}
+.convertright{
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width:40px;
+    background:white;
+    border-top:1px #999 solid;
+    border-left:1px #999 solid;
+    border-bottom:1px #999 solid;
+    border-radius: 5px;
+    right: 0px;
+    font-size: 40px;
+    color:#999;
+    justify-content: center;
+}
+h6{
+    align-self: center;
+}
