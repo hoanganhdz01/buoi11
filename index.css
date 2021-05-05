@@ -244,9 +244,6 @@ i[class^="icon_"]{
      height:auto;
      background-color: rgb(221, 221, 221);
 }
-.bn,.text,.tast,.tast1{
-    cursor: pointer;
-}
 .banner{
     display: flex;
     flex-direction:column;
@@ -265,8 +262,16 @@ i[class^="icon_"]{
     flex-direction:column;
     display: flex;
 }   
+.bn,.text,.tast,.tast1{
+    cursor: pointer;
+}
 .bn{
     flex: 4;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 792px;
+    height: 300px;
 }
 .cc{
     flex: 0.5;
@@ -330,7 +335,6 @@ i[class^="icon_"]{
     flex: 2;
     background-color: white;
     display: flex;
-    flex-direction:row;
     padding: 10px;
     margin-bottom: 5px;
 }
@@ -404,6 +408,7 @@ i[class^="icon_"]{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .sanphamtrang1{
     flex: 1;
@@ -536,36 +541,47 @@ span1{
 .with1{
     position:relative;
 }
-.convertleft{
-    display: flex;
-    position: absolute;
-    height: 60px;
-    width:30px;
-    background:white;
-    border-top:2px rgb(235, 228, 228) solid;
-    border-right:2px rgb(235, 228, 228) solid;
-    border-bottom:2px rgb(235, 228, 228) solid;
-    border-radius: 5px;
-    left: 0px;
-    font-size: 40px;
-    color:#999;
-    justify-content: center;
-}
-.convertright{
-    display: flex;
-    position: absolute;
-    height: 60px;
-    width:30px;
-    background:white;
-    border-top:2px rgb(235, 228, 228) solid;
-    border-left:2px rgb(235, 228, 228) solid;
-    border-bottom:2px rgb(235, 228, 228) solid;
-    border-radius: 5px;
-    right: 0px;
-    font-size: 40px;
-    color:#999;
-    justify-content: center;
-}
 h6{
     align-self: center;
+}
+.convertleft{
+    left: 0px;
+    border-right:2px #00000010 solid;
+}
+.convertright{
+    right: 0px;
+    border-left:2px #00000010 solid;
+}
+.convertleft,.convertright{
+    background:white;
+    border-top:2px #00000010 solid;
+    border-bottom:2px #00000010 solid;
+    border-radius: 5px;
+    color:#999;
+    display: flex;
+    position: absolute;
+    height: 70px;
+    top: 25%;
+    width:30px;
+    font-size: 60px;
+    justify-content: center;
+}
+
+.prev,.next{
+    display: flex;
+    background: #00000080;
+    top:40%;
+    padding-top:20px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size:60px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
 }
